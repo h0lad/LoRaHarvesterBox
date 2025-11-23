@@ -52,7 +52,7 @@ Infineon FM24V10: 1-MBit non-volatile F-RAM for storing firmware updates, messag
 
 It's the only energy harvester that supports up to 110mA peak current.
 
-I'm not overly happy with this IC as it lacks a few helpful features:
+I'm not overly happy with this IC as it lacks a few useful features:
 
  - No I²C interface and ADC for reading voltages/currents
 
@@ -62,9 +62,9 @@ I'm not overly happy with this IC as it lacks a few helpful features:
 
  - Rather annoying pin configuration. Layouting it doesn't make much fun.
 
- - It doesn't have interal high-precision resistors for adjusting the voltage limits (VBAT_OV, etc.). Even with 1% resistors the resulting voltage range is barely acceptable due to error propagation.
+ - It doesn't have interal high-precision resistors for configuring the voltage limits (VBAT_OV, etc.). Even with 1% tolerance resistors the resulting voltage ranges are barely acceptable due to error propagation.
 
- Honestly - It's an old thing compared to the latest generation from ST or e-peas.
+Honestly - It's an old thing compared to the latest generation from ST or e-peas.
   
 ### Why not buying a "naked" ST STM32WLE5? 
 
