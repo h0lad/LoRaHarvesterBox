@@ -64,6 +64,8 @@ I'm not overly happy with this IC as it lacks a few useful features:
 
  - It doesn't have interal high-precision resistors for configuring the voltage limits (VBAT_OV, etc.). Even with 1% tolerance resistors the resulting voltage ranges are barely acceptable due to error propagation.
 
+ - Lowest possible battery voltage is 1.9V. This means we cannot utilize the full capacity of "exotic" storage types like LTO- and NaIon-cells.
+
 Honestly - It's an old thing compared to the latest generation from ST or e-peas.
   
 ### Why not buying a "naked" ST STM32WLE5? 
