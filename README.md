@@ -129,7 +129,7 @@ Also it's not too expensive with 6€.
 
 You have to be super careful here. Don't trust your 1%-SMD-Resistor book from Aliexpress or Amazon. Measure each resistor with a high-resolution multimeter and then calculate the voltages according to the readings! A shabby Libreoffice Calc sheet can be found within the `docs` folder to do this.
 
-I wrote a script for calculating proper resistor values here: [ti-bq25570-calculator](https://github.com/h0lad/ti-bq25570-calculator).
+I wrote a script for calculating resistor values here: [ti-bq25570-calculator](https://github.com/h0lad/ti-bq25570-calculator).
 
 ## Hardware Verification
 
@@ -148,18 +148,19 @@ I wrote a script for calculating proper resistor values here: [ti-bq25570-calcul
 
 ✅ Boosts 0.6V to 3.3V without energy storage attached
 
-✅ Lower and upper  VBAT_OK threshold: not testable at the moment. 
+✅ Lower and upper  VBAT_OK threshold
 
-✅ Power switch (TI TPS22917DBV) - seems to work. But blocked to to point above.
-
-Findings:
- - The BQ25570 doesn't like my extremely noisy power supply as a storage emulation. It doesn't come up.
- - You have to be very careful as even the tolerance of 1% resistors (R_OV1 and R_OV2) might cause overcharging. So stay away from the hard limits of your battery.
-
+✅ Power switch (TI TPS22917DBV)
 
 **ST STM32WL55**
 
 ✅ Connect to the SWD interface using a ST-Link
+
+**Findings**
+
+1. The BQ25570 doesn't like my extremely noisy power supply as a storage emulation. It doesn't come up.
+
+2. You have to be very careful as even the tolerance of 1% resistors (R_OV1 and R_OV2) might cause overcharging. So stay away from the hard limits of your battery.
 
 
 ## License
