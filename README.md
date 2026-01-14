@@ -49,6 +49,10 @@ Infineon FM24V10: 1-MBit non-volatile F-RAM for storing firmware updates, messag
 
 ## Physical Dimensions
 
+
+![MeshtasticRouterNode](docs/Box.jpg)
+
+
 This weirdo PCB format is designed around the cheapest water protected box from Aliexpress.
 
 [Aliexpress, F-type, 63x58x35](https://de.aliexpress.com/item/1005005480970197.html)
